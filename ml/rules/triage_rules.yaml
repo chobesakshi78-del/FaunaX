@@ -1,0 +1,46 @@
+version: "1.0"
+engine_name: "Fauna-X Rule-Based Triage Engine"
+last_updated: "2026-10-08"
+
+thresholds:
+  critical_risk_score: 0.85
+  high_risk_score: 0.65
+  medium_risk_score: 0.40
+  nearby_case_cluster_threshold_5km: 5
+  herd_mortality_alert_threshold: 2
+
+critical_combinations:
+  - name: "Suspected Foot & Mouth Syndrome"
+    required_symptoms: ["SYM_ORAL_ULCERS", "SYM_FOOT_LESIONS"]
+    species: ["Cattle", "Buffalo", "Sheep", "Goat", "Swine"]
+    escalation_priority: "CRITICAL"
+    action: "Immediate veterinary quarantine advisory and lab sample requisition"
+
+  - name: "Suspected Lumpy Skin Syndrome"
+    required_symptoms: ["SYM_SKIN_NODULES", "SYM_FEVER"]
+    species: ["Cattle", "Buffalo"]
+    escalation_priority: "HIGH"
+    action: "Urgent veterinary inspection and vector containment alert"
+
+  - name: "Suspected Hemorrhagic Septicemia"
+    required_symptoms: ["SYM_HEMORRHAGIC_SIGNS", "SYM_RESPIRATORY_DISTRESS", "SYM_FEVER"]
+    species: ["Cattle", "Buffalo"]
+    escalation_priority: "CRITICAL"
+    action: "Emergency veterinary dispatch & district alert"
+
+priority_escalation_rules:
+  - condition: "model_risk_score >= 0.80 and nearby_cases_5km >= 3"
+    priority: "CRITICAL"
+    reason: "High model estimated risk combined with active geographical hotspot density."
+
+  - condition: "symptom_severity_sum >= 2.0 or has_high_priority_trigger"
+    priority: "HIGH"
+    reason: "Presence of one or more critical pathognomonic clinical triggers."
+
+  - condition: "model_risk_score >= 0.60"
+    priority: "HIGH"
+    reason: "Elevated multimodal case risk probability."
+
+  - condition: "model_risk_score >= 0.35"
+    priority: "MEDIUM"
+    reason: "Moderate risk requiring routine veterinary verification within 24-48 hours."

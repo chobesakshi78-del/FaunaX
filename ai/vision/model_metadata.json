@@ -1,0 +1,11 @@
+{
+  "model_name": "FAUNA-X Livestock Vision Core",
+  "version": "1.0.0",
+  "task": "classification",
+  "architecture": "yolo11n-cls",
+  "classes": ["fmd", "healthy", "lumpy_skin"],
+  "input_size": 224,
+  "confidence_threshold": 0.65,
+  "supported_species": ["cattle", "buffalo"],
+  "disclaimer": "AI-assisted preliminary screening. Veterinary verification required."
+}

@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgis/postgis:15-3.3-alpine
+    container_name: faunax-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: faunax_user
+      POSTGRES_PASSWORD: faunax_password
+      POSTGRES_DB: faunax_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U faunax_user -d faunax_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: faunax-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    container_name: faunax-backend
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - DATABASE_URL=postgresql+asyncpg://faunax_user:faunax_password@postgres:5432/faunax_db
+      - REDIS_URL=redis://redis:6379/0
+      - JWT_SECRET=faunax_production_secret_key_change_in_real_deployment_2026
+      - MODEL_PATH=/app/models/production/faunax_livestock_vision_v1.pt
+      - MODEL_METADATA_PATH=/app/models/production/model_metadata.json
+    volumes:
+      - ./uploads:/app/uploads
+      - ./models:/app/models
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.frontend
+    container_name: faunax-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "3000:80"
+
+volumes:
+  postgres_data:
+  redis_data:

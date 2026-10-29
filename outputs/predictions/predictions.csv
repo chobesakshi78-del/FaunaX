@@ -1,0 +1,46 @@
+image,relative_path,prediction,confidence,model_version,timestamp,screening_status,veterinary_verification_required
+fmd_038d509abffb.jpg,fmd\fmd_038d509abffb.jpg,fmd,0.9998,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+fmd_14d18986f06e.jpg,fmd\fmd_14d18986f06e.jpg,healthy,0.7746,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+fmd_22759c4ca879.jpg,fmd\fmd_22759c4ca879.jpg,fmd,0.9993,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+fmd_45ff64877d42.jpg,fmd\fmd_45ff64877d42.jpg,fmd,0.9997,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+fmd_49e9253af28a.jpg,fmd\fmd_49e9253af28a.jpg,healthy,0.9009,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+fmd_4ba76909c2d8.jpg,fmd\fmd_4ba76909c2d8.jpg,fmd,0.9998,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+fmd_55791b8a43b6.jpg,fmd\fmd_55791b8a43b6.jpg,fmd,0.9997,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+fmd_7c906fa6ac2b.jpg,fmd\fmd_7c906fa6ac2b.jpg,fmd,0.9999,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+fmd_832bd34ce954.jpg,fmd\fmd_832bd34ce954.jpg,fmd,0.9923,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+fmd_ba2886236ea0.jpg,fmd\fmd_ba2886236ea0.jpg,fmd,1.0,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+fmd_d72460a15f7d.jpg,fmd\fmd_d72460a15f7d.jpg,healthy,0.7083,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+fmd_ddb43cc34037.jpg,fmd\fmd_ddb43cc34037.jpg,fmd,0.9998,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+fmd_e1aadbf1e214.jpg,fmd\fmd_e1aadbf1e214.jpg,fmd,1.0,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+fmd_e4c9bb40d4c3.jpg,fmd\fmd_e4c9bb40d4c3.jpg,healthy,0.8921,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+fmd_e84c35a9db48.jpg,fmd\fmd_e84c35a9db48.jpg,fmd,0.9825,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+healthy_18f30ec270b3.jpg,healthy\healthy_18f30ec270b3.jpg,healthy,1.0,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+healthy_3f383ecf3039.jpg,healthy\healthy_3f383ecf3039.jpg,healthy,1.0,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+healthy_5eb82d92c8e2.jpg,healthy\healthy_5eb82d92c8e2.jpg,healthy,0.9744,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+healthy_5f633aeaf218.jpg,healthy\healthy_5f633aeaf218.jpg,healthy,0.8389,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+healthy_6a75d60fabcf.jpg,healthy\healthy_6a75d60fabcf.jpg,healthy,1.0,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+healthy_8464e3fce804.jpg,healthy\healthy_8464e3fce804.jpg,healthy,0.9999,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+healthy_8516a059b68b.jpg,healthy\healthy_8516a059b68b.jpg,healthy,0.9967,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+healthy_98ea88b5d6ed.jpg,healthy\healthy_98ea88b5d6ed.jpg,healthy,1.0,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+healthy_acb96e4556cc.jpg,healthy\healthy_acb96e4556cc.jpg,healthy,1.0,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+healthy_ad5af06ca504.jpg,healthy\healthy_ad5af06ca504.jpg,healthy,1.0,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+healthy_aeffe3b2cfc5.jpg,healthy\healthy_aeffe3b2cfc5.jpg,healthy,1.0,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+healthy_b3b51ef8697c.jpg,healthy\healthy_b3b51ef8697c.jpg,healthy,1.0,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+healthy_bf1f64a37a51.jpg,healthy\healthy_bf1f64a37a51.jpg,healthy,0.9986,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+healthy_c51bc943abe6.jpg,healthy\healthy_c51bc943abe6.jpg,healthy,0.9795,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+healthy_da9dee26cadd.jpg,healthy\healthy_da9dee26cadd.jpg,healthy,0.998,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+lumpy_skin_031c4da13f8a.jpg,lumpy_skin\lumpy_skin_031c4da13f8a.jpg,lumpy_skin,1.0,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+lumpy_skin_12f4b43911b8.jpg,lumpy_skin\lumpy_skin_12f4b43911b8.jpg,lumpy_skin,1.0,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+lumpy_skin_163ec0a5de2c.jpg,lumpy_skin\lumpy_skin_163ec0a5de2c.jpg,lumpy_skin,0.9901,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+lumpy_skin_2d79a7af0575.jpg,lumpy_skin\lumpy_skin_2d79a7af0575.jpg,healthy,1.0,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+lumpy_skin_33dedb472d20.jpg,lumpy_skin\lumpy_skin_33dedb472d20.jpg,lumpy_skin,0.9053,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+lumpy_skin_352ddcb26c25.jpg,lumpy_skin\lumpy_skin_352ddcb26c25.jpg,lumpy_skin,0.9999,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+lumpy_skin_4a767a3af7fc.jpg,lumpy_skin\lumpy_skin_4a767a3af7fc.jpg,lumpy_skin,1.0,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+lumpy_skin_4bf39aef4bb5.jpg,lumpy_skin\lumpy_skin_4bf39aef4bb5.jpg,lumpy_skin,0.9931,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+lumpy_skin_6d48977427c6.jpg,lumpy_skin\lumpy_skin_6d48977427c6.jpg,lumpy_skin,0.9998,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+lumpy_skin_c3e65e3d3df5.jpg,lumpy_skin\lumpy_skin_c3e65e3d3df5.jpg,lumpy_skin,1.0,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+lumpy_skin_cd79322e9148.jpg,lumpy_skin\lumpy_skin_cd79322e9148.jpg,lumpy_skin,0.9998,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+lumpy_skin_db882e6e1104.jpg,lumpy_skin\lumpy_skin_db882e6e1104.jpg,healthy,0.9996,1.0.0,2026-10-07T23:57:33.525273,Negative,True
+lumpy_skin_e1c7a3d6cee5.jpg,lumpy_skin\lumpy_skin_e1c7a3d6cee5.jpg,lumpy_skin,1.0,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+lumpy_skin_ec9964c0a8ea.jpg,lumpy_skin\lumpy_skin_ec9964c0a8ea.jpg,lumpy_skin,0.8923,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True
+lumpy_skin_f2fe6e252f22.jpg,lumpy_skin\lumpy_skin_f2fe6e252f22.jpg,lumpy_skin,1.0,1.0.0,2026-10-07T23:57:33.525273,Flagged - Potential Indicator,True

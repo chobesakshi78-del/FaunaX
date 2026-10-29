@@ -1,0 +1,13 @@
+{
+  "id": "zenodo_lsd",
+  "name": "LumpySkinDisease_DataHub",
+  "doi": "10.5281/zenodo.11003967",
+  "url": "https://zenodo.org/api/records/11003967/files/LumpySkinDisease_DataHub.zip/content",
+  "archive_file": "data\\raw\\archives\\LumpySkinDisease_DataHub.zip",
+  "target_dir": "data\\raw\\lumpy_skin",
+  "size_bytes": 511548905,
+  "md5": "81d77de795a5aaf5c446b872335f64d5",
+  "sha256": "801893877216885e6c40be8baeb4cf2c51a5e7213fe1c8ee46dc4479e8a73bc4",
+  "license": "CC-BY-4.0",
+  "author": "Francesco Branda (Universita Campus Bio-Medico)"
+}

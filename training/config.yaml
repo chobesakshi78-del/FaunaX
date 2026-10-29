@@ -1,0 +1,38 @@
+# FAUNA-X Visual Screening Model Training Configuration
+# Targeted for NVIDIA GeForce RTX 2050 (4GB VRAM)
+
+experiment_name: "faunax_livestock_v1"
+model: "yolo11n-cls.pt"        # Pretrained classification backbone
+data_path: "data/processed/livestock_cls"
+
+# Optimization Parameters
+epochs: 50
+patience: 12                  # Early stopping patience
+batch_size: 16                # Safe for 4GB RTX 2050 VRAM
+imgsz: 224                    # Standard input resolution for classification backbone
+lr0: 0.001
+lrf: 0.01
+optimizer: "AdamW"
+weight_decay: 0.0005
+seed: 42
+
+# Hardware & System
+device: 0                     # GPU device index (0 for RTX 2050)
+workers: 2                    # Multi-processing workers on Windows
+amp: true                     # Automatic mixed precision (FP16) for speed & memory savings
+
+# Domain-Specific Livestock Augmentation (Realistic & Anatomy-Preserving)
+augmentations:
+  hsv_h: 0.015                # Minimal color variation (preserve skin lesion colors)
+  hsv_s: 0.4                  # Saturation adjustment
+  hsv_v: 0.4                  # Brightness adjustment
+  degrees: 10.0               # Slight camera tilt
+  translate: 0.1              # Minor translation
+  scale: 0.2                  # Moderate scaling
+  fliplr: 0.5                 # Horizontal flip
+  flipud: 0.0                 # Strictly NO vertical flip (inappropriate for livestock anatomy)
+  erasing: 0.1                # Random occlusion simulation
+
+# Post-processing & Output
+confidence_threshold: 0.65    # Calibrated decision threshold for screening flags
+disclaimer: "AI-assisted preliminary screening. Veterinary verification required."

@@ -1,0 +1,13 @@
+{
+  "id": "zenodo_fmd",
+  "name": "FMD Cattle",
+  "doi": "10.5281/zenodo.7779246",
+  "url": "https://zenodo.org/api/records/7779246/files/FMD_Cattle.zip/content",
+  "archive_file": "data\\raw\\archives\\FMD_Cattle.zip",
+  "target_dir": "data\\raw\\fmd",
+  "size_bytes": 191144108,
+  "md5": "79185643478182c586a9c5f14e01cdd4",
+  "sha256": "5812b78a72b0623a7f6ba0fe7010101070b4067e5aeb8b3e2dfe4438c7e8a298",
+  "license": "CC-BY-4.0",
+  "author": "Abbie Osborn (University of Surrey)"
+}

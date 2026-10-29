@@ -1,0 +1,31 @@
+# FAUNA-X Backend Container (FastAPI + PyTorch Vision Engine)
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install system dependencies including libgl for OpenCV image preprocessing
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python requirements
+COPY requirements.txt /app/
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application source and production AI model
+COPY backend /app/backend
+COPY ai /app/ai
+COPY models /app/models
+COPY uploads /app/uploads
+
+# Expose port
+EXPOSE 8000
+
+ENV PYTHONPATH=/app
+ENV MODEL_PATH=/app/models/production/faunax_livestock_vision_v1.pt
+ENV MODEL_METADATA_PATH=/app/models/production/model_metadata.json
+
+CMD ["uvicorn", "backend.app.main:app", "--host", "0.0.0.0", "--port", "8000"]

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import 'leaflet/dist/leaflet.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans antialiased selection:bg-blue-600 selection:text-white;
+  }
+}
+
+/* Custom Professional Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  border-radius: 0.75rem;
+}
+
+/* Professional Card & Glow Utilities */
+.pro-card {
+  @apply bg-white border border-slate-200/80 rounded-2xl shadow-card transition-all duration-200;
+}
+
+.pro-card-hover {
+  @apply hover:shadow-card-hover hover:border-blue-300;
+}
+
+.pro-gradient-header {
+  @apply bg-gradient-to-r from-blue-700 via-blue-800 to-navy-900 text-white;
+}
+
+.pro-badge-blue {
+  @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-200;
+}
+

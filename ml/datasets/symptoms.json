@@ -1,0 +1,123 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-10-22",
+  "categories": [
+    "Dermatological",
+    "Systemic",
+    "Respiratory",
+    "Gastrointestinal",
+    "Musculoskeletal",
+    "Neurological",
+    "Reproductive"
+  ],
+  "symptoms": [
+    {
+      "symptom_id": "SYM_SKIN_NODULES",
+      "name": "Nodular Skin Lesions / Lumps",
+      "aliases": [
+        "skin nodules", "lumps on skin", "bumps", "nodules", "rashes", "papules", "gaanth",
+        "त्वचेवर गाठी", "अंगावर गाठी", "गाठी", "त्वचा पर गांठें", "गांठें", "गांठ"
+      ],
+      "applicable_species": ["Cattle", "Buffalo", "Goat", "Sheep"],
+      "severity_score": 0.85,
+      "category": "Dermatological",
+      "high_priority_trigger": true
+    },
+    {
+      "symptom_id": "SYM_FEVER",
+      "name": "High Fever (Pyrexia)",
+      "aliases": [
+        "fever", "high temperature", "hot body", "bukhar", "taap",
+        "ताप", "तीव्र ताप", "जास्त ताप", "बुखार", "तेज बुखार", "ताप आला आहे"
+      ],
+      "applicable_species": ["Cattle", "Buffalo", "Goat", "Sheep", "Swine", "Poultry"],
+      "severity_score": 0.70,
+      "category": "Systemic",
+      "high_priority_trigger": false
+    },
+    {
+      "symptom_id": "SYM_ORAL_ULCERS",
+      "name": "Oral / Dental Lesions & Blisters",
+      "aliases": [
+        "mouth ulcers", "blisters in mouth", "salivation", "drooling", "chhale", "foam from mouth",
+        "लाळ गळणे", "तोंडावर व्रण", "तोंडात फोड", "मुंह से लार", "लार", "छाले", "मुंह में छाले"
+      ],
+      "applicable_species": ["Cattle", "Buffalo", "Goat", "Sheep", "Swine"],
+      "severity_score": 0.90,
+      "category": "Gastrointestinal",
+      "high_priority_trigger": true
+    },
+    {
+      "symptom_id": "SYM_FOOT_LESIONS",
+      "name": "Foot Vesicles & Lameness",
+      "aliases": [
+        "foot sores", "hoof blisters", "limping", "lameness", "foot rot", "khur me zakhm", "langdana",
+        "लंगडणे", "पायावर फोड", "खूर खराब", "लंगड़ाना", "पैरों में छाले"
+      ],
+      "applicable_species": ["Cattle", "Buffalo", "Goat", "Sheep", "Swine"],
+      "severity_score": 0.85,
+      "category": "Musculoskeletal",
+      "high_priority_trigger": true
+    },
+    {
+      "symptom_id": "SYM_APPETITE_LOSS",
+      "name": "Anorexia / Loss of Appetite",
+      "aliases": [
+        "not eating", "loss of appetite", "off feed", "reduced eating", "khana band",
+        "चारा खात नाही", "खाणे बंद", "भूक मंदावणे", "चारा न खाना", "भूख कम लगना"
+      ],
+      "applicable_species": ["Cattle", "Buffalo", "Goat", "Sheep", "Swine", "Poultry"],
+      "severity_score": 0.50,
+      "category": "Systemic",
+      "high_priority_trigger": false
+    },
+    {
+      "symptom_id": "SYM_NASAL_DISCHARGE",
+      "name": "Mucopurulent Nasal / Eye Discharge",
+      "aliases": [
+        "runny nose", "eye discharge", "mucus from nose", "lacrimation", "naak behna",
+        "नाकातून स्राव", "डोळ्यातून पाणी", "नाक बहना", "आंखों से पानी"
+      ],
+      "applicable_species": ["Cattle", "Buffalo", "Goat", "Sheep", "Swine", "Poultry"],
+      "severity_score": 0.65,
+      "category": "Respiratory",
+      "high_priority_trigger": false
+    },
+    {
+      "symptom_id": "SYM_MILK_DROP",
+      "name": "Sudden Agalactia / Drop in Milk Yield",
+      "aliases": [
+        "milk drop", "no milk", "reduced milk yield", "doodh kam hona",
+        "दूध कमी होणे", "दूध घट", "दूध कम होना"
+      ],
+      "applicable_species": ["Cattle", "Buffalo", "Goat"],
+      "severity_score": 0.60,
+      "category": "Systemic",
+      "high_priority_trigger": false
+    },
+    {
+      "symptom_id": "SYM_RESPIRATORY_DISTRESS",
+      "name": "Dyspnea / Labored Breathing / Coughing",
+      "aliases": [
+        "fast breathing", "coughing", "gasping", "labored breathing", "saans lene me dikkat",
+        "श्वास घेण्यास त्रास", "खोकला", "सांस लेने में तकलीफ", "खांसी"
+      ],
+      "applicable_species": ["Cattle", "Buffalo", "Goat", "Sheep", "Swine", "Poultry"],
+      "severity_score": 0.85,
+      "category": "Respiratory",
+      "high_priority_trigger": true
+    },
+    {
+      "symptom_id": "SYM_HEMORRHAGIC_SIGNS",
+      "name": "Subcutaneous Edema / Swelling of Neck & Dewlap",
+      "aliases": [
+        "neck swelling", "dewlap swelling", "throat swelling", "gale me sujan", "galghotu",
+        "गळ्याला सूज", "सूज", "गले में सूजन", "सूजन"
+      ],
+      "applicable_species": ["Cattle", "Buffalo"],
+      "severity_score": 0.95,
+      "category": "Systemic",
+      "high_priority_trigger": true
+    }
+  ]
+}

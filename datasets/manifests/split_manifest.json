@@ -1,0 +1,35 @@
+{
+  "seed": 42,
+  "ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "classes": [
+    "fmd",
+    "healthy",
+    "lumpy_skin"
+  ],
+  "counts": {
+    "train": {
+      "fmd": 107,
+      "healthy": 592,
+      "lumpy_skin": 213
+    },
+    "val": {
+      "fmd": 22,
+      "healthy": 127,
+      "lumpy_skin": 45
+    },
+    "test": {
+      "fmd": 24,
+      "healthy": 128,
+      "lumpy_skin": 47
+    },
+    "external_test": {
+      "fmd": 15,
+      "healthy": 15,
+      "lumpy_skin": 15
+    }
+  }
+}

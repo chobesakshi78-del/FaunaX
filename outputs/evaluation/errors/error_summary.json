@@ -1,0 +1,214 @@
+{
+  "total_evaluated": 199,
+  "total_misclassifications": 28,
+  "false_positives": [
+    {
+      "image": "healthy_2c5aa515092a.jpg",
+      "true_class": "healthy",
+      "pred_class": "fmd",
+      "confidence": 1.0
+    },
+    {
+      "image": "healthy_403bc0dca8a1.jpg",
+      "true_class": "healthy",
+      "pred_class": "fmd",
+      "confidence": 0.6684
+    },
+    {
+      "image": "healthy_70cc8eb0da60.jpg",
+      "true_class": "healthy",
+      "pred_class": "lumpy_skin",
+      "confidence": 0.9989
+    },
+    {
+      "image": "healthy_79656e9f365d.jpg",
+      "true_class": "healthy",
+      "pred_class": "lumpy_skin",
+      "confidence": 0.5917
+    },
+    {
+      "image": "healthy_7c8284798b93.jpg",
+      "true_class": "healthy",
+      "pred_class": "lumpy_skin",
+      "confidence": 0.7196
+    },
+    {
+      "image": "healthy_8412514f1aa9.jpg",
+      "true_class": "healthy",
+      "pred_class": "lumpy_skin",
+      "confidence": 0.5393
+    },
+    {
+      "image": "healthy_85117a7441da.jpg",
+      "true_class": "healthy",
+      "pred_class": "lumpy_skin",
+      "confidence": 0.8922
+    },
+    {
+      "image": "healthy_89b4a2375029.jpg",
+      "true_class": "healthy",
+      "pred_class": "lumpy_skin",
+      "confidence": 0.9349
+    },
+    {
+      "image": "healthy_947d96f8bb16.jpg",
+      "true_class": "healthy",
+      "pred_class": "fmd",
+      "confidence": 0.9539
+    },
+    {
+      "image": "healthy_97d358c7c796.jpg",
+      "true_class": "healthy",
+      "pred_class": "lumpy_skin",
+      "confidence": 0.9327
+    },
+    {
+      "image": "healthy_e775fd78cd65.jpg",
+      "true_class": "healthy",
+      "pred_class": "lumpy_skin",
+      "confidence": 0.9979
+    },
+    {
+      "image": "healthy_eb89916bdd3f.jpg",
+      "true_class": "healthy",
+      "pred_class": "lumpy_skin",
+      "confidence": 0.8914
+    },
+    {
+      "image": "healthy_fa2fd94c6068.jpg",
+      "true_class": "healthy",
+      "pred_class": "lumpy_skin",
+      "confidence": 0.7902
+    }
+  ],
+  "false_negatives": [
+    {
+      "image": "fmd_0bad1a1f5b0e.jpg",
+      "true_class": "fmd",
+      "pred_class": "healthy",
+      "confidence": 0.823
+    },
+    {
+      "image": "fmd_58bd195565ee.jpg",
+      "true_class": "fmd",
+      "pred_class": "healthy",
+      "confidence": 0.6739
+    },
+    {
+      "image": "fmd_f4b685ce7d30.jpg",
+      "true_class": "fmd",
+      "pred_class": "healthy",
+      "confidence": 1.0
+    },
+    {
+      "image": "fmd_fad58bbf5d38.jpg",
+      "true_class": "fmd",
+      "pred_class": "healthy",
+      "confidence": 0.9997
+    },
+    {
+      "image": "lumpy_skin_0ed1d4cfc22f.jpg",
+      "true_class": "lumpy_skin",
+      "pred_class": "healthy",
+      "confidence": 0.6722
+    },
+    {
+      "image": "lumpy_skin_0f189ff35d3d.jpg",
+      "true_class": "lumpy_skin",
+      "pred_class": "healthy",
+      "confidence": 0.9993
+    },
+    {
+      "image": "lumpy_skin_2ee1b19d1ed4.jpg",
+      "true_class": "lumpy_skin",
+      "pred_class": "healthy",
+      "confidence": 0.8136
+    },
+    {
+      "image": "lumpy_skin_2f1d16cc165e.jpg",
+      "true_class": "lumpy_skin",
+      "pred_class": "healthy",
+      "confidence": 0.9618
+    },
+    {
+      "image": "lumpy_skin_338858fa5492.jpg",
+      "true_class": "lumpy_skin",
+      "pred_class": "healthy",
+      "confidence": 0.9968
+    },
+    {
+      "image": "lumpy_skin_390f08086300.jpg",
+      "true_class": "lumpy_skin",
+      "pred_class": "healthy",
+      "confidence": 0.99
+    },
+    {
+      "image": "lumpy_skin_a6cab7d577e0.jpg",
+      "true_class": "lumpy_skin",
+      "pred_class": "healthy",
+      "confidence": 0.9864
+    },
+    {
+      "image": "lumpy_skin_a817be110871.jpg",
+      "true_class": "lumpy_skin",
+      "pred_class": "healthy",
+      "confidence": 0.9957
+    },
+    {
+      "image": "lumpy_skin_d1da32c036d4.jpg",
+      "true_class": "lumpy_skin",
+      "pred_class": "healthy",
+      "confidence": 0.9276
+    },
+    {
+      "image": "lumpy_skin_e3284de58b29.jpg",
+      "true_class": "lumpy_skin",
+      "pred_class": "healthy",
+      "confidence": 1.0
+    },
+    {
+      "image": "lumpy_skin_e33ccf6d80a6.jpg",
+      "true_class": "lumpy_skin",
+      "pred_class": "healthy",
+      "confidence": 0.862
+    }
+  ],
+  "low_confidence_cases": [
+    {
+      "image": "healthy_12cd9120095a.jpg",
+      "true_class": "healthy",
+      "pred_class": "healthy",
+      "confidence": 0.5607
+    },
+    {
+      "image": "healthy_524d09ad887f.jpg",
+      "true_class": "healthy",
+      "pred_class": "healthy",
+      "confidence": 0.6074
+    },
+    {
+      "image": "healthy_707f8fd6cf52.jpg",
+      "true_class": "healthy",
+      "pred_class": "healthy",
+      "confidence": 0.5818
+    },
+    {
+      "image": "healthy_79656e9f365d.jpg",
+      "true_class": "healthy",
+      "pred_class": "lumpy_skin",
+      "confidence": 0.5917
+    },
+    {
+      "image": "healthy_8412514f1aa9.jpg",
+      "true_class": "healthy",
+      "pred_class": "lumpy_skin",
+      "confidence": 0.5393
+    },
+    {
+      "image": "healthy_ea4460b827e1.jpg",
+      "true_class": "healthy",
+      "pred_class": "healthy",
+      "confidence": 0.6059
+    }
+  ]
+}

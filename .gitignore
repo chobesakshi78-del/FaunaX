@@ -1,0 +1,50 @@
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+
+# Local SQLite Database
+faunax.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Node Dependencies & Build Output
+node_modules/
+dist/
+build/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+*.timestamp-*.mjs
+vite.config.ts.timestamp-*
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+.pytest_cache/
+
+# Large Datasets & Uploads (prevents GitHub 100MB limit violations and repo bloat)
+data/
+uploads/
+scratch_*.pdf
+
+# PyTorch checkpoints and raw archives
+*.pt
+*.pth
+weights/
+runs/
+*.cache
+
+# Local OS & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
