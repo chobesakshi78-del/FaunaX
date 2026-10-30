@@ -1,6 +1,6 @@
 import { Case, AIPrediction, MapCasePoint, MapCaseFeature, AIHealthStatus, User, ClusterPoint, OutbreakForecast, LabRecord } from '../types';
 
-const API_BASE = '/api';
+const API_BASE = 'https://faunax-3.onrender.com/api';
 
 function getAuthHeaders(): HeadersInit {
   const token = localStorage.getItem('faunax_token');
